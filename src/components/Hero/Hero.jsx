@@ -1,5 +1,7 @@
 import Header from "../Header/Header";
 import heart from "../../assets/heart.png";
+import hero_image from "../../assets/hero_image.png";
+import hero_image_back from "../../assets/hero_image_back.png";
 import "./Hero.css";
 const Hero = () => {
   return (
@@ -59,6 +61,10 @@ const Hero = () => {
           <span>Heart Rate</span>
           <span>116 bpm</span>
         </div>
+
+        {/* hero images */}
+        <img src={hero_image} alt="" className="hero-image" />
+        <img src={hero_image_back} alt="" className="hero-image-back" />
       </div>
     </div>
   );

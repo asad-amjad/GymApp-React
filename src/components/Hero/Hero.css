@@ -126,7 +126,7 @@
 }
 
 .heart-rate>img {
-    width: 2rem ;
+    width: 2rem;
 }
 
 .heart-rate>span:nth-child(2) {
@@ -136,4 +136,19 @@
 .heart-rate>span:nth-child(3) {
     color: white;
     font-size: 1.5rem;
+}
+
+.hero-image {
+    position: absolute;
+    right: 8rem;
+    top: 10rem;
+    width: 23rem;
+}
+
+.hero-image-back {
+    position: absolute;
+    top: 4rem;
+    right: 20rem;
+    z-index: -1;
+    width: 15rem;
 }
