@@ -10,7 +10,7 @@ const Testmonials = () => {
   const tLength = testimonialsData.length;
   const transition = { type: "spring", duration: 3 };
   return (
-    <div className="Testmonials">
+    <div className="testmonials">
       <div className="left-t">
         <span>Testimonials</span>
         <span className="stroke-text">What they</span>
