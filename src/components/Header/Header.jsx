@@ -1,7 +1,9 @@
-import "./Header.css";
+import { useState } from "react";
+import { Link } from "react-scroll";
+
 import Logo from "../../assets/logo.png";
 import Bars from "../../assets/bars.png";
-import { useState } from "react";
+import "./Header.css";
 const Header = () => {
   const mobile = window.innerWidth <= 768 ? true : false;
   const [menOpened, setMenOpened] = useState(false);
@@ -25,11 +27,56 @@ const Header = () => {
         </div>
       ) : (
         <ul className="header-menu">
-          <li onClick={() => setMenOpened(false)}>Home</li>
-          <li onClick={() => setMenOpened(false)}>Programs</li>
-          <li onClick={() => setMenOpened(false)}>Why us</li>
-          <li onClick={() => setMenOpened(false)}>Plans</li>
-          <li onClick={() => setMenOpened(false)}>Testimonial</li>
+          <li>
+            <Link
+              onClick={() => setMenOpened(false)}
+              to="home"
+              span={true}
+              smooth={true}
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => setMenOpened(false)}
+              to="programs"
+              span={true}
+              smooth={true}
+            >
+              Programs
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => setMenOpened(false)}
+              to="reasons"
+              span={true}
+              smooth={true}
+            >
+              Why us
+            </Link>
+          </li>
+          <li onClick={() => setMenOpened(false)}>
+            <Link
+              onClick={() => setMenOpened(false)}
+              to="plans"
+              span={true}
+              smooth={true}
+            >
+              Plans
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => setMenOpened(false)}
+              to="testmonials"
+              span={true}
+              smooth={true}
+            >
+              Testimonial
+            </Link>
+          </li>
         </ul>
       )}
     </div>
