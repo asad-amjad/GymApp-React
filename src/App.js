@@ -5,6 +5,7 @@ import Plans from "./components/Plans/Plans";
 import Programs from "./components/Programs/Programs";
 import Reasons from "./components/Reasons/Reasons";
 import Testmonials from "./components/Testmonials/Testmonials";
+import Footer from "./components/Footer/Footer";  
 function App() {
   return (
     <div className="App">
@@ -14,6 +15,7 @@ function App() {
       <Plans />
       <Testmonials />
       <Join />
+      <Footer />
     </div>
   );
 }
