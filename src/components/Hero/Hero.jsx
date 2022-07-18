@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import NumberCounter from "number-counter";
 
 import Header from "../Header/Header";
 import heart from "../../assets/heart.png";
@@ -11,7 +12,7 @@ const Hero = () => {
   const transition = { type: "spring", duration: 3 };
   const mobile = window.innerWidth <= 768 ? true : false;
   return (
-    <div className="hero" id='home'>
+    <div className="hero" id="home">
       <div className="blur hero-blur"></div>
       <div className="left-h">
         <Header />
@@ -46,15 +47,17 @@ const Hero = () => {
         {/* figures */}
         <div className="figures">
           <div>
-            <span>+140</span>
+            <span>
+              <NumberCounter start={60} end={140} preFix="+" delay="4" />
+            </span>
             <span>expert couches</span>
           </div>
           <div>
-            <span>+894</span>
+            <span><NumberCounter start={300} end={894} preFix="+" delay="4" /></span>
             <span>members joined</span>
           </div>{" "}
           <div>
-            <span>+40</span>
+            <span><NumberCounter start={5} end={40} preFix="+" delay="4" /></span>
             <span>fitness programs</span>
           </div>
         </div>
